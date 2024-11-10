@@ -1,0 +1,66 @@
+/* File: css/users.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Latar belakang biru muda */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Agar sudut kotak lebih lembut */
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a; /* Warna biru gelap untuk judul */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #1e3a8a; /* Garis tabel berwarna biru gelap */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3b82f6; /* Biru terang untuk header */
+    color: white;
+}
+
+td {
+    background-color: #e0f2fe; /* Biru muda untuk sel tabel */
+}
+
+td img.user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+button {
+    background-color: #1e3a8a; /* Warna biru untuk tombol */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2563eb; /* Biru sedikit lebih gelap saat hover */
+}

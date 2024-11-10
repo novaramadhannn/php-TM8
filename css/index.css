@@ -1,0 +1,304 @@
+/* Reset dasar dan pengaturan font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f7fc; /* Latar belakang abu-abu terang */
+    color: #333;
+}
+
+/* Navbar */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: #1D4ED8; /* Biru saat scroll */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo a {
+    color: #1D4ED8; /* Biru */
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.navbar .logo a:hover {
+    color: #2563EB; /* Biru muda saat hover */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0%;
+}
+
+nav ul li {
+    margin-left: 25px;
+    /* margin: 30px; */
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #2563EB; /* Biru muda saat hover */
+}
+
+/* Konten utama */
+.main-content {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1D4ED8; /* Biru gelap */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Tombol CTA */
+.cta .btn {
+    display: inline-block;
+    background-color: #1D4ED8;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #2563EB;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1D4ED8; /* Warna biru untuk tema */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    font-size: 14px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    color: white;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #AFCBFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.dropdown .dropbtn {
+    background-color: transparent;
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #1D4ED8;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.login-btn {
+    display: inline-block;
+    background-color: #1D4ED8; /* Biru terang */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #ffffff; /* Biru lebih gelap saat hover */
+}
+
+/* CSS untuk tombol logout */
+.logout-btn {
+    display: inline-block;
+    background-color: #EF4444; /* Merah */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #DC2626; /* Merah lebih gelap saat hover */
+}
+
+/* Pop-up CSS */
+.popup {
+    display: none; /* Sembunyikan pop-up secara default */
+    position: fixed;
+    z-index: 1; /* Pastikan pop-up berada di atas konten lainnya */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.popup .close-btn {
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.popup .close-btn:hover,
+.popup .close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.popup p {
+    font-size: 14px;
+    margin: 10px 0;
+}
